@@ -1,0 +1,198 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+\global\long\def\A{\mathbb{A}}
+
+
+\global\long\def\P{\mathbb{P}}
+
+
+\global\long\def\R{\mathbb{R}}
+
+
+\global\long\def\C{\mathbb{C}}
+
+
+
+\section{Commutative Algebra}
+\begin{itemize}
+\item An ideal $I$ is prime if $fg\in I$ means $f\in I$ or $g\in I$
+\item An element $p$ is prime if $p|fg$ means $p|f$ or $p|g$
+\item An element $p$ is irreducible if it cannot be factored into two non-invertible
+elements
+\item In a UFD, irreducible and prime are equivalent
+\item A polynomial ring over a UFD is a UFD
+\item A ring is Noetherian if every ascending chain of ideals is stationary,
+or equivalently every ideal is finitely generated
+\item A polynomial ring over a Noetherian ring is Noetherian
+\item prime ideals are radical
+\item quotient of a prime ideal is an integral domain
+\end{itemize}
+
+\section{Topology}
+\begin{itemize}
+\item Zariski topology is where closed sets are zero loci
+\item An irreducible set is not a proper union of closed subsets
+\item continuous images of irreducible sets are irreducible
+\item products of irreducible sets are irreducible
+\item A Noetherian space is where every decreasing chain of closed subsets
+is stationary
+\item In a Noetherian space decomposition into irreducible components is
+unique
+\item The dimension of an irreducible space is the length of the longest
+chain of nonempty irreducible closed subsets minus 1; the dimension
+of any space is the maximum dimension of an irreducible component
+\end{itemize}
+
+\section{Abstract Nonsense}
+\begin{itemize}
+\item A presheaf of rings is an assignment of rings to open sets, as well
+as a restriction homomorphism, in such a way that restriction is transitive
+and reflexive, and the empty set is assigned to the trivial ring.
+\item A sheaf is a presheaf with the property that a ring element on the
+global ring can be defined by its restriction to the sets of an open
+cover
+\item The stalk of a presheaf is the set of all ring elements of all neighborhoods
+of $P$, identifying elements if they agree on some neighborhood of
+$P$.
+\item germs are the elements of a stalk
+\item the stalk of $O_{X}$ at $P$ is $O_{X,P}$
+\item If $f:X\to Y$ is a function, the pull-back $f^{*}\phi$ of a regular
+function $\phi$ on $Y$ is $\phi\circ f$
+\item A function is a morphism if it pulls back regular functions to regular
+functions
+\item A morphism of sheaves $F,G$ is collection of morphisms $f_{U}:F\left(U\right)\to G\left(U\right)$
+that commute with restriction maps
+\end{itemize}
+
+\section{Affine Varieties}
+\begin{itemize}
+\item Affine variety corresponds to prime ideal
+\item The coordinate ring $A\left(X\right)=k\left[x_{i}\right]_{i}/I\left(X\right)$
+is the ``polynomials'' on $X$
+\item The rational functions are the fraction field of $A\left(X\right)$
+\item The regular functions at $P$ are those rational functions that can
+be evaluated at $P$; alternatively they are the functions that have
+a representation as a quotient of polynomials in $k\left[x_{i}\right]_{i}$
+on some neighborhood of $P$.
+\item The regular functions on an open set $U$ are the functions that are
+regular at each $P\in U$.
+\item $O\left(X_{f}\right)=A\left(X\right)_{f}:=\left\{ g/f^{r}\right\} \subseteq K\left(X\right)$
+\item A product of affine varieties is an affine variety
+\item An abstract affine variety is an irreducible space and a sheaf of
+$k$-valued functions that is isomorphic to a concrete affine variety
+\item Distinguished open subsets are abstract affine varieties
+\item Not all open subsets of varieties are varieties, consider $\C\backslash\left\{ 0\right\} $
+\item morphisms can be checked on open sets, germs or global sets
+\item morphisms of affine varieties $f$ correspond to $k$-algebra homomorphisms
+$f^{*}$
+\end{itemize}
+
+\section{Varieties}
+\begin{itemize}
+\item A prevariety is an irreducible set with a sheaf of functions that
+has a finite cover of affine varieties
+\item Can create a prevariety by gluing two prevarieties along a common
+open subset: Let $f$ be the isomorphism between open subsets $U_{1},U_{2}$
+of $X_{1},X_{2}$ and $i_{1},i_{2}$ be the inclusions into $X$.
+The topology is the quotient topology and the sheaf of functions is
+pairs $\left(\phi_{1},\phi_{2}\right)\in O_{X_{1}}\left(i_{1}^{-1}\left(U\right)\right)\times O_{X_{2}}\left(i_{2}^{-1}\left(U\right)\right)$
+that agree on overlaps
+\item Same thing works with finite collection of prevarieties, with each
+pair glued on an open subset, provided isomorphisms are consistent.
+\item Let $\left\{ V_{i}\right\} $ be an affine cover of $Y$ and $\left\{ U_{i}\right\} $
+be an open cover of $X$ with $f\left(U_{i}\right)\subseteq V_{i}$
+and $f$ a morphism when restricted to each $U_{i}$. Then $f$ is
+a morphism.
+\item A variety is a prevariety $X$ so that for any prevariety $Y$ and
+pair of morphisms $Y\to X$, the set where they agree is closed; equivalently,
+the diagonal is closed.
+\item an open or closed subprevariety of a variety is a variety.
+\item A variety is complete if $\pi:X\times Y\to Y$ is closed for every
+variety $Y$
+\item If $X$ is complete then any morphism $X\to Y$ ($Y$ variety) is
+closed.
+\item regular functions on complete varieties are constant
+\end{itemize}
+
+\section{Projective Space}
+\begin{itemize}
+\item think of $\P^{n}$ as $\A^{n}$ compactified with a point at infinity
+for every direction
+\item A projectivity on $\P^{n}$ is an element of $\mbox{GL}_{n+1}\left(k\right)/k^{*}$
+\item A conic is a symmetric bilinear form on $k^{3}$, which can be represented
+as $\varepsilon_{1}X^{2}+\varepsilon Y^{2}+\varepsilon Z^{2}$ after
+a projectivity
+\item conics in $\P_{\R}^{2}$ are
+
+\begin{itemize}
+\item nondegenerate $X^{2}+Y^{2}-Z^{2}$
+\item empty $X^{2}+Y^{2}+Z^{2}$
+\item one point $X^{2}+Y^{2}$
+\item two lines $X^{2}-Y^{2}$
+\item line $X^{2}$
+\item everything $0$
+\end{itemize}
+\item nondegenerate conics are equivalently $XY=Z^{2}$, isomorphic to $\P^{1}$
+with the isomorphism $\left(U:V\right)\mapsto\left(U^{2},UV,V^{2}\right)$
+which can be interpreted as projection
+\item conics in $\P_{\bar{k}}^{2}$
+
+\begin{itemize}
+\item nondegenerate $X^{2}+Y^{2}-Z^{2}$
+\item two lines $X^{2}-Y^{2}$
+\item line $X^{2}$
+\item everything $0$
+\end{itemize}
+\item A degree-$d$ homogeneous form $F$ on $\P^{n}$ corresponds to a
+(maximum) degree-$d$ polynomial $f$ in $\A^{n}$. If $n=1$, the
+multiplicity of a zero in $F$ is the multiplicity of the corresponding
+zero in $f$, or $d-\deg f$ for the point at infinity.
+\item Bezout's theorem: for an algebraically closed field the number of
+intersections of projective curves is the product of their degrees,
+provided they share no irreducible components and multiplicities are
+counted appropriately
+\item Easy cases: line or nondegenerate conic vs a nonincluding curve in
+$\P^{2}$, inequality to compensate for multiplicities
+\item 5 points in general position define a unique conic
+\end{itemize}
+
+\section{Projective Varieties}
+\begin{itemize}
+\item Homogeneous ideals are generated by homogeneous polynomials or equivalently
+contain each homogeneous part of each member, or equivalently are
+fixed by the action of $k^{*}$.
+\item A projective algebraic set $X$ in $\P^{n}$ corresponds to a cone
+$C\left(X\right)$ in $\A^{n+1}$
+\item The zero set of a homogeneous ideal in $\A^{n+1}$ is the cone of
+its zero set in $\P^{n}$ (provided neither are empty)
+\item the ideal generated by $X\subseteq\P^{n}$ is the ideal generated
+by $C\left(X\right)\in\A^{n+1}$.
+\item Nullstellensatz still works provided $Z\left(I\right)$ is nonempty;
+$Z\left(I\right)$ can only be empty if $I=\left\langle 1\right\rangle $
+or $\sqrt{I}=\left\langle x_{0},\dots,x_{n}\right\rangle $.
+\item Homogeneous coordinate ring is $S\left(X\right)=A\left(C\left(X\right)\right)$;
+\textbf{not} polynomial functions
+\item rational functions are $f/g$, where $f,g\in S\left(X\right)^{\left(d\right)}$
+have common degree $d$
+\item homogeneous functions of the same degree on homogeneous coordinates
+give a morphism, provided they never all vanish
+\item projective varieties are varieties
+\item The Segre embedding is $\P^{n}\times\P^{m}\to\P^{\left(n+1\right)\left(m+1\right)-1}:\left(\left(x_{i}\right),\left(y_{i}\right)\right)\mapsto\left(x_{i}y_{j}\right)$.
+It is the zero locus of $z_{i,j}z_{i',j'}-z_{i,j'}z_{i',j}$.
+\item projective varieties are complete
+\item A nontrivial projective variety intersects with the zero locus of
+any homogeneous polynomial
+\item The Veronese embedding is $\P^{n}\to\P^{{n+d \choose n}-1}:\left(x=\left(x_{i}\right)\right)\mapsto\left(x^{I}\right)_{I}$
+(monomials of degree $d$). It is the zero locus of $z_{I}z_{J}-z_{K}z_{L}$,
+with $I+J=K+L$\end{itemize}
+
+\end{document}
